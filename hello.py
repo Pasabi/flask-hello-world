@@ -5,5 +5,5 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    name = request.args.get("name", "Foo")
+    name = request.args.get("name", "Bar")
     return f'Hello, {escape(name)}!!'
